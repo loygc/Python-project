@@ -3,7 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="404ecfca-7789-4709-81a9-756c4fb66596" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TankWar/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TankWar/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepLeaningTest/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DeepLeaningTest/boston_date.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestDemo2/.idea/TestDemo2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestDemo2/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestDemo2/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestDemo2/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestDemo2/app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/PlaneWar/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestDemo2/app/core.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,6 +20,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Python_project$main__3_.coverage" NAME="main (3) Coverage Results" MODIFIED="1523766027969" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/TankWar" />
     <SUITE FILE_PATH="coverage/Python_project$server.coverage" NAME="server Coverage Results" MODIFIED="1516701354469" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/socket" />
     <SUITE FILE_PATH="coverage/Python_project$subscriber.coverage" NAME="subscriber　 Coverage Results" MODIFIED="1517383508626" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day10" />
     <SUITE FILE_PATH="coverage/Python_project$Nosetests_in_decorator_py.coverage" NAME="Nosetests in decorator.py Coverage Results" MODIFIED="1515061381248" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day4" />
@@ -33,11 +41,11 @@
     <SUITE FILE_PATH="coverage/Python_project$core__1_.coverage" NAME="core (1) Coverage Results" MODIFIED="1522378903378" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/MoveTask" />
     <SUITE FILE_PATH="coverage/Python_project$example.coverage" NAME="example Coverage Results" MODIFIED="1522336649150" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/NewsSpider" />
     <SUITE FILE_PATH="coverage/Python_project$ChangeName.coverage" NAME="ChangeName Coverage Results" MODIFIED="1515060662394" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day3" />
-    <SUITE FILE_PATH="coverage/Python_project$main__2_.coverage" NAME="main (2) Coverage Results" MODIFIED="1522335989465" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/NewsSpider" />
+    <SUITE FILE_PATH="coverage/Python_project$main__2_.coverage" NAME="main (2) Coverage Results" MODIFIED="1523769459972" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PlaneWar" />
     <SUITE FILE_PATH="coverage/Python_project$main.coverage" NAME="main Coverage Results" MODIFIED="1522338363084" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CheckNude" />
     <SUITE FILE_PATH="coverage/Python_project$client.coverage" NAME="client Coverage Results" MODIFIED="1516701792050" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/socket" />
     <SUITE FILE_PATH="coverage/Python_project$Nosetests_for__test1.coverage" NAME="Nosetests for 协程.test1 Coverage Results" MODIFIED="1517383546028" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day10" />
-    <SUITE FILE_PATH="coverage/Python_project$decorator.coverage" NAME="decorator Coverage Results" MODIFIED="1522594322193" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day3" />
+    <SUITE FILE_PATH="coverage/Python_project$decorator.coverage" NAME="decorator Coverage Results" MODIFIED="1523769458130" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day3" />
     <SUITE FILE_PATH="coverage/Python_project$test.coverage" NAME="test Coverage Results" MODIFIED="1515061703987" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/day1" />
     <SUITE FILE_PATH="coverage/Python_project$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1521632302451" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PythonTest" />
   </component>
@@ -111,6 +119,7 @@
         <option value="$PROJECT_DIR$/MoveTask/core.py" />
         <option value="$PROJECT_DIR$/BeautyCheck/core.py" />
         <option value="$PROJECT_DIR$/TankFight/main.py" />
+        <option value="$PROJECT_DIR$/PlaneWar/main.py" />
       </list>
     </option>
   </component>
@@ -146,6 +155,28 @@
             <path>
               <item name="Python-project" type="b2602c69:ProjectViewProjectNode" />
               <item name="Python-project" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Python-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Python-project" type="462c0819:PsiDirectoryNode" />
+              <item name="PlaneWar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Python-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Python-project" type="462c0819:PsiDirectoryNode" />
+              <item name="PlaneWar" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Python-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Python-project" type="462c0819:PsiDirectoryNode" />
+              <item name="PlaneWar" type="462c0819:PsiDirectoryNode" />
+              <item name="main.py" type="8704e2dd:PyFileNode" />
+            </path>
+            <path>
+              <item name="Python-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Python-project" type="462c0819:PsiDirectoryNode" />
+              <item name="TankWar" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -191,7 +222,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.main (1)">
+  <component name="RunManager" selected="Python.main (2)">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="Python-project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -293,7 +324,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="main (2)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Python-project" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -301,18 +332,18 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python36_64\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/CheckNude" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PlaneWar" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CheckNude/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PlaneWar/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="sina_news" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="main (3)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Python-project" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -320,12 +351,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="C:\Program Files (x86)\Microsoft Visual Studio\Shared\Python36_64\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/NewsSpider" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/TankWar" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/NewsSpider/sina_news.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TankWar/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -476,19 +507,19 @@
     <list>
       <item itemvalue="Python.decorator" />
       <item itemvalue="Python tests.Nosetests in decorator.py" />
-      <item itemvalue="Python.main" />
-      <item itemvalue="Python.sina_news" />
       <item itemvalue="Python.core" />
       <item itemvalue="Python.core (1)" />
       <item itemvalue="Python.main (1)" />
+      <item itemvalue="Python.main (2)" />
+      <item itemvalue="Python.main (3)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main (2)" />
+        <item itemvalue="Python.main (3)" />
         <item itemvalue="Python.main (1)" />
         <item itemvalue="Python.core" />
         <item itemvalue="Python.core (1)" />
-        <item itemvalue="Python.main" />
-        <item itemvalue="Python.sina_news" />
       </list>
     </recent_temporary>
   </component>
@@ -553,7 +584,7 @@
       <window_info anchor="bottom" id="Python Console" order="9" sideWeight="0.72327965" weight="0.32663316" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49707174" weight="0.27303183" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.3484087" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22314675" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22617246" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="4" weight="0.32980332" />
       <window_info anchor="right" id="SciView" order="6" weight="0.32980332" />
@@ -579,11 +610,91 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="39" />
+      <option name="time" value="41" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/TankFight/main.py" />
     <entry file="file://$PROJECT_DIR$/TankFight/main.py" />
+    <entry file="file://$PROJECT_DIR$/PlaneWar/img/bomb-2.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PlaneWar/img/name.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PlaneWar/img/loading.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PlaneWar/img/game_loading2.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PlaneWar/img/enemy2_down2.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PlaneWar/img/game_loading3.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PlaneWar/img/game_loading4.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PlaneWar/img/enemy0_down3.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PlaneWar/img/bullet2.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TankWar/main.spec">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PlaneWar/img/hero1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PlaneWar/img/background.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PlaneWar/img/hero.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PlaneWar/img/bullet.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PlaneWar/img/enemy0.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://D:/Users/smarter/Anaconda3/Lib/site-packages/pygame/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="299" column="4" selection-start-line="299" selection-start-column="4" selection-end-line="299" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PlaneWar/img/bullet1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TankWar/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="128" lean-forward="true" selection-start-line="128" selection-end-line="128" />
+          <folding>
+            <element signature="e#24#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PlaneWar/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="90" column="26" lean-forward="true" selection-start-line="90" selection-start-column="26" selection-end-line="90" selection-end-column="26" />
+          <folding>
+            <element signature="e#118#321#0" />
+            <element signature="e#323#792#0" />
+            <element signature="e#472#1099#0" />
+            <element signature="e#1698#1880#0" />
+            <element signature="e#2119#2560#0" />
+            <element signature="e#959#1459#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
