@@ -1,13 +1,18 @@
 __author__ = "susmote"
 
+
 import pygame
 import time
 import random
 from pygame.locals import *
 
 
-class Base(object):
+enemy_list = pygame.sprite.Group()
+
+
+class Base(pygame.sprite.Sprite):
     def __init__(self, screen_temp, x, y, image_name):
+        pygame.sprite.Sprite.__init__(self)
         self.x = x
         self.y = y
         self.screen = screen_temp
@@ -31,19 +36,31 @@ class HeroPlane(BasePlane):
     # 玩家飞机类
     def __init__(self, screen_temp):
         BasePlane.__init__(self, screen_temp, 120, 420, "./img/hero1.png")
+        self.stop = True
+        self.direction = None
         self.image = pygame.transform.scale(self.image, (int(100 * 0.6), int(124 * 0.6)))
 
-    def move_left(self):
-        self.x -= 3
+    def display(self):
+        self.screen.blit(self.image, (self.x, self.y))
 
-    def move_right(self):
-        self.x += 3
+        for bullet in self.bullet_list:
+            bullet.display()
+            bullet.move()
+            if bullet.judge():
+                self.bullet_list.remove(bullet)
+            for enemy in enemy_list:
+                bullet.hit_plane(enemy)
 
-    def move_up(self):
-        self.y -= 3
-
-    def move_down(self):
-        self.y += 3
+    def move(self):
+        if not self.stop:
+            if self.direction == "left":
+                self.x -= 3
+            if self.direction == "right":
+                self.x += 3
+            if self.direction == "up":
+                self.y -= 3
+            if self.direction == "down":
+                self.y += 3
 
     def fire(self):
         self.bullet_list.append(Bullet(self.screen, self.x, self.y))
@@ -56,11 +73,13 @@ class EnemyPlane(BasePlane):
         self.live = True
         self.image = pygame.transform.scale(self.image, (int(51*0.6), int(39*0.6)))
         self.direction = "right"
+
         self.images = [pygame.image.load("./img/enemy0_down1.png"),
                        pygame.image.load("./img/enemy0_down2.png"),
                        pygame.image.load("./img/enemy0_down3.png"),
                        pygame.image.load("./img/enemy0_down4.png")]
         self.step = 0
+        self.rect = self.image.get_rect()
 
     def move(self):
 
@@ -81,15 +100,17 @@ class EnemyPlane(BasePlane):
             self.bullet_list.append(EnemyBullet(self.screen, self.x, self.y))
 
     def explode(self):
-        if self.step == len(self.images):
-            self.live = False
-        else:
-            self.image = self.images[self.step]
-            self.image = pygame.transform.scale(self.image, (int(51 * 0.6), int(39 * 0.6)))
-            time.sleep(0.05)
-            self.screen.blit(self.image, (self.x, self.y))
-            self.step += 1
-            print(self.step)
+        while self.live:
+            if self.step == len(self.images):
+                self.live = False
+            else:
+                self.image = self.images[self.step]
+                self.image = pygame.transform.scale(self.image, (int(51 * 0.6), int(39 * 0.6)))
+                time.sleep(0.03)
+                pygame.display.update()
+                self.screen.blit(self.image, (self.x, self.y))
+                self.step += 1
+                print(self.step)
 
 
 class BaseBullet(Base):
@@ -102,6 +123,7 @@ class Bullet(BaseBullet):
     def __init__(self, screen_temp, x, y):
         BaseBullet.__init__(self, screen_temp, x+24, y-11, "./img/bullet.png")
         self.image = pygame.transform.scale(self.image, (int(22 * 0.6), int(22 * 0.6)))
+        self.rect = self.image.get_rect()
 
     def move(self):
         self.y -= 5
@@ -111,6 +133,16 @@ class Bullet(BaseBullet):
             return True
         else:
             return False
+
+    def hit_plane(self, enemy):
+        if self.judge():
+            hit_list = pygame.sprite.spritecollide(self, enemy_list, False)
+            if enemy in hit_list:
+                print(enemy)
+                enemy.explode()
+
+
+
 
 
 class EnemyBullet(BaseBullet):
@@ -140,7 +172,7 @@ def main():
 
     hero = HeroPlane(screen)
 
-    enemy = EnemyPlane(screen)
+    enemy_list.add(EnemyPlane(screen))
 
     while True:
 
@@ -148,10 +180,13 @@ def main():
 
         hero.display()
 
-        if enemy.live:
-            enemy.display()
-            enemy.move()
-            enemy.fire()
+        hero.move()
+
+        for enemy in enemy_list:
+            if enemy.live:
+                enemy.display()
+                enemy.move()
+                enemy.fire()
 
         pygame.display.update()
 
@@ -164,26 +199,35 @@ def main():
             elif event.type == KEYDOWN:
                 if event.key == K_a or event.key == K_LEFT:
                     print('left')
-                    hero.move_left()
+                    hero.stop = False
+                    hero.direction = "left"
                 elif event.key == K_d or event.key == K_RIGHT:
                     print('right')
-                    hero.move_right()
+                    hero.stop = False
+                    hero.direction = "right"
                 elif event.key == K_w or event.key == K_UP:
                     print('up')
-                    hero.move_up()
+                    hero.stop = False
+                    hero.direction = "up"
                 elif event.key == K_s or event.key == K_DOWN:
                     print('down')
-                    hero.move_down()
+                    hero.stop = False
+                    hero.direction = "down"
                 elif event.key == K_SPACE:
                     print('space')
                     hero.fire()
                 elif event.key == K_ESCAPE:
                     print("exit")
                     exit()
-                elif event.key == K_b:
-                    while enemy.live:
-                        enemy.explode()
-                        pygame.display.update()
+            elif event.type == KEYUP:
+                if event.key == K_LEFT or event.key == K_a:
+                    hero.stop = True
+                if event.key == K_RIGHT or event.key == K_d:
+                    hero.stop = True
+                if event.key == K_UP or event.key == K_w:
+                    hero.stop = True
+                if event.key == K_DOWN or event.key == K_s:
+                    hero.stop = True
 
         time.sleep(0.01)
 
