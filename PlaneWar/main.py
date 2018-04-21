@@ -1,6 +1,5 @@
 __author__ = "susmote"
 
-
 import pygame
 import time
 import random
@@ -110,7 +109,6 @@ class EnemyPlane(BasePlane):
                 pygame.display.update()
                 self.screen.blit(self.image, (self.x, self.y))
                 self.step += 1
-                print(self.step)
 
 
 class BaseBullet(Base):
@@ -136,8 +134,16 @@ class Bullet(BaseBullet):
 
     def hit_plane(self, enemy):
         if self.judge():
-            hit_list = pygame.sprite.spritecollide(self, enemy_list, False)
-            if enemy in hit_list:
+            # 获取敌机的坐标
+            print("敌机的坐标 ：",enemy.x, enemy.y)
+            # 获取子弹的坐标
+            print("子弹的坐标 ：", self.x, self.y)
+            # 获取敌机的实时区域
+            startX = enemy.x
+            endX = enemy.x+(enemy.rect.width)
+            print(startX)
+            print(endX)
+            if self.x > startX and self.x < endX:
                 print(enemy)
                 enemy.explode()
 
@@ -174,6 +180,7 @@ def main():
 
     enemy_list.add(EnemyPlane(screen))
 
+
     while True:
 
         screen.blit(background, (0, 0))
@@ -187,6 +194,8 @@ def main():
                 enemy.display()
                 enemy.move()
                 enemy.fire()
+        if len(enemy_list) < 1:
+            enemy_list.add(EnemyPlane(screen))
 
         pygame.display.update()
 
